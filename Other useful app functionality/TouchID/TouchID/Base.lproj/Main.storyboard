@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TouchID" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show me your finger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dh-5Y-PWk">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Gxr-CH-waY"/>
+                                    <constraint firstAttribute="width" constant="343" id="jGK-3n-4Gn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TouchID_on" translatesAutoresizingMaskIntoConstraints="NO" id="Bek-Xo-njJ">
+                                <rect key="frame" x="67" y="28" width="239" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="4Up-eW-Fh9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhX-ru-P2D">
+                                <rect key="frame" x="161" y="285" width="53" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0Tw-NN-VTV"/>
+                                    <constraint firstAttribute="width" constant="53" id="aS7-VD-rMp"/>
+                                </constraints>
+                                <state key="normal" title="Refresh" image="Refresh"/>
+                                <connections>
+                                    <action selector="resetContextState:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p9d-yp-y3t"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LhX-ru-P2D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="145" id="Dfw-xv-Gho"/>
+                            <constraint firstItem="9dh-5Y-PWk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KBb-h5-cGz"/>
+                            <constraint firstItem="9dh-5Y-PWk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MOc-Er-n2B"/>
+                            <constraint firstItem="Bek-Xo-njJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="QFa-u9-hxZ"/>
+                            <constraint firstItem="9dh-5Y-PWk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SJa-HQ-whF"/>
+                            <constraint firstItem="Bek-Xo-njJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="UMO-PV-alD"/>
+                            <constraint firstItem="9dh-5Y-PWk" firstAttribute="top" secondItem="LhX-ru-P2D" secondAttribute="bottom" constant="8" symbolic="YES" id="YLW-qA-Uzk"/>
+                            <constraint firstItem="9dh-5Y-PWk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b40-gi-aW3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LhX-ru-P2D" secondAttribute="trailing" constant="145" id="ibM-Nj-aDj"/>
+                            <constraint firstItem="LhX-ru-P2D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lCe-Rb-MGX"/>
+                            <constraint firstItem="Bek-Xo-njJ" firstAttribute="centerX" secondItem="LhX-ru-P2D" secondAttribute="centerX" constant="-1" id="xEi-UC-JpU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="Bek-Xo-njJ" id="VKG-GY-qZu"/>
+                        <outlet property="message" destination="9dh-5Y-PWk" id="tqE-AI-cMf"/>
+                        <outlet property="refresh" destination="LhX-ru-P2D" id="erT-XP-nxg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Refresh" width="51" height="51"/>
+        <image name="TouchID_on" width="155" height="155"/>
+    </resources>
+</document>
