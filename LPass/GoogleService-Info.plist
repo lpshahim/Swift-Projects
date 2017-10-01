@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>760739174384-1dbvbj8srv537aic09pvubpre2l5siq7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.760739174384-1dbvbj8srv537aic09pvubpre2l5siq7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA7k_CXS4HDkIFkv2xGMcoQsx-EOKpUDxo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>760739174384</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Louis-Philip.LPass</string>
+	<key>PROJECT_ID</key>
+	<string>lpass-4314a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lpass-4314a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:760739174384:ios:31cd5f6a95b742f3</string>
+	<key>DATABASE_URL</key>
+	<string>https://lpass-4314a.firebaseio.com</string>
+</dict>
+</plist>
